@@ -40,9 +40,9 @@ body {
     font-size: 18px;
 }
 
-.nav-links li a:hover{
-  color: rgb(152, 211, 138);
-  transition: .5s ease-in;
+.nav-links li a:hover {
+    color: rgb(152, 211, 138);
+    transition: .5s ease-in;
 }
 
 .hamburger {
@@ -60,7 +60,7 @@ body {
 }
 
 .hamburger_menu {
-display: none;
+    display: none;
 }
 
 .home-banner {
@@ -121,11 +121,13 @@ display: none;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     gap: 20px;
+    width: 80%;
+    margin: auto;
 }
 
 .about-image img {
-    width: 650px;
-    height: 500px;
+    width: 450px;
+    height: 400px;
 }
 
 .aboutus-content {
@@ -166,27 +168,29 @@ display: none;
     color: white;
     font-size: 45px;
     text-align: center;
-    /* padding: 25px; */
 }
 
 .services {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    width: 82%;
+    margin: auto;
 }
 
 .service-1 {
+    display: grid;
     padding: 15px;
 }
 
 .service-1 img {
-    width: 300px;
-    height: 550px;
-    opacity: 65%;
+    width: 250px;
+    height: 450px;
+    opacity: 140%;
 
 }
 
 .service-1 img:hover {
-    opacity: 140%;
+    opacity: 65%;
 }
 
 .service-1 span {
@@ -564,22 +568,27 @@ footer {
     padding: 20px;
     color: white;
     height: 40vh;
+    background-color: #555;
 }
 
 .footer-section {
     display: flex;
     justify-content: space-between;
     text-align: start;
+    width: 80%;
+    margin: auto;
 }
 
-.footer-section ul li{
+.footer-section ul li {
     list-style: none;
 }
-.footer-section ul li a{
+
+.footer-section ul li a {
     color: white;
     text-decoration: none;
 }
-.footer-section ul li a:hover{
+
+.footer-section ul li a:hover {
     color: rgb(106, 201, 87);
     transition: .5s ease-in;
 }
@@ -588,582 +597,616 @@ footer {
 /* Media Queries */
 
 @media only screen and (max-width:575px) {
-.nav-links {
-    position: fixed;
-    z-index: 1;
-    top: 75px;
-    right: 0;
-    height: 100vh;
-    width: 200px;
-    background-color: #111312;
-    opacity: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-}
-.nav-links li {
-    margin: 20px 0;
+    .nav-links {
+        position: fixed;
+        z-index: 1;
+        top: 75px;
+        right: 0;
+        height: 100vh;
+        width: 200px;
+        background-color: #111312;
+        opacity: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    #toggle-menu:checked+.hamburger+.nav-links {
+        transform: translateX(0);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger_menu {
+        display: none;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .home-banner h1 {
+        font-size: 25px;
+    }
+
+    .home-banner h5 {
+        font-size: 10px;
+    }
+
+    .home-banner p {
+        font-size: 10px;
+        width: 250px;
+    }
+
+    .home-banner a {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .home-banner {
+        width: 300px;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+
+    .About_us {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+    .about-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .aboutus-content h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .aboutus-content p {
+        font-size: 10px;
+        width: 250px;
+        line-height: 25px;
+        margin: auto;
+    }
+
+    .under-line {
+        width: 100px;
+        margin: auto;
+    }
+
+    .service-section h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .services {
+        grid-template-columns: repeat(1, 1fr);
+        place-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .service-1 span {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .services img {
+        height: 250px;
+        width: 300px;
+    }
+
+    .Gallery h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .underline-3 {
+        width: 250px;
+    }
+
+    .text-know-more {
+        font-size: 25px;
+    }
+
+    .content1 h1 {
+        font-size: 10px;
+    }
+
+    .content1 h6 {
+        font-size: 5px;
+    }
+
+    .content2 h1 {
+        font-size: 10px;
+    }
+
+    .content2 h6 {
+        font-size: 5px;
+    }
+
+    .content7 h3 {
+        font-size: 10px;
+    }
+
+    .content7 p {
+        font-size: 7px;
+    }
+
+    .content8 h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .content8 p {
+        font-size: 10px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .content8 a {
+        display: none;
+    }
+
+    .content8 {
+        place-items: center;
+    }
+
+    .parallax-content {
+        width: 300px;
+    }
+
+    .parallax-content h1 {
+        font-size: 20px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .parallax-content p {
+        font-size: 15px;
+        text-align: center;
+        width: 300px;
+    }
+
+    .parallax {
+        height: 50vh;
+    }
+
+    .booking-form-section {
+        padding: 25px 25px;
+        width: 223px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 250px;
+        margin: auto;
+
+    }
+
+    .header h1 {
+        font-size: 10px;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
-#toggle-menu:checked + .hamburger + .nav-links {
-    transform: translateX(0);
-}
-
-.hamburger {
-    display: flex;
-}
-.hamburger_menu{
-    display: none;
-}
-.logo img{
-    width: 100px;
-}
-.home-banner h1 {
-    font-size: 25px;
-}
-
-.home-banner h5 {
-    font-size: 10px;
-}
-
-.home-banner p {
-    font-size: 10px;
-    width: 250px;
-}
-
-.home-banner a {
-    font-size: 10px;
-    padding: 10px;
-}
-
-.home-banner {
-    width: 300px;
-}
-
-.banner-image {
-    width: 100%;
-}
-
-.About_us {
-    grid-template-columns: repeat(1, 1fr);
-    place-items: center;
-}
-
-.about-image img {
-    width: 250px;
-    height: 250px;
-}
-
-.aboutus-content h1 {
-    font-size: 30px;
-    text-align: center;
-}
-
-.aboutus-content p {
-    font-size: 10px;
-    width: 250px;
-    line-height: 25px;
-    margin: auto;
-}
-
-.under-line {
-    width: 100px;
-    margin: auto;
-}
-
-.service-section h1 {
-    font-size: 30px;
-    text-align: center;
-}
-
-.services {
-    grid-template-columns: repeat(1, 1fr);
-    place-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.service-1 span {
-    font-size: 20px;
-    text-align: center;
-}
-
-.services img {
-    height: 250px;
-    width: 300px;
-}
-
-.Gallery h1 {
-    font-size: 25px;
-    text-align: center;
-}
-
-.underline-3 {
-    width: 250px;
-}
-
-.text-know-more {
-    font-size: 25px;
-}
-
-.content1 h1 {
-    font-size: 10px;
-}
-
-.content1 h6 {
-    font-size: 5px;
-}
-
-.content2 h1 {
-    font-size: 10px;
-}
-
-.content2 h6 {
-    font-size: 5px;
-}
-
-.content7 h3 {
-    font-size: 10px;
-}
-
-.content7 p {
-    font-size: 7px;
-}
-
-.content8 h3 {
-    font-size: 20px;
-    text-align: center;
-}
-
-.content8 p {
-    font-size: 10px;
-    text-align: center;
-    line-height: 20px;
-}
-
-.content8 a {
-    display: none;
-}
-
-.content8 {
-    place-items: center;
-}
-
-.parallax-content {
-    width: 300px;
-}
-
-.parallax-content h1 {
-    font-size: 20px;
-    width: 300px;
-    text-align: center;
-}
-
-.parallax-content p {
-    font-size: 15px;
-    text-align: center;
-    width: 300px;
-}
-
-.parallax {
-    height: 50vh;
-}
-
-.booking-form-section {
-    padding: 25px 25px;
-    width: 223px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 250px;
-    margin: auto;
-
-}
-.header h1{
-    font-size: 10px;
-}
-
-.footer-section {
-    flex-direction: column;
-    gap: 20px;
-}
-}
 @media only screen and (min-width:576px) and (max-width:768px) {
-.nav-links {
-    position: fixed;
-    z-index: 1;
-    top: 75px;
-    right: 0;
-    height: 100vh;
-    width: 400px;
-    background-color: #111312;
-    opacity: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-}
-.nav-links li {
-    margin: 20px 0;
+    .nav-links {
+        position: fixed;
+        z-index: 1;
+        top: 75px;
+        right: 0;
+        height: 100vh;
+        width: 400px;
+        background-color: #111312;
+        opacity: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    #toggle-menu:checked+.hamburger+.nav-links {
+        transform: translateX(0);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger_menu {
+        display: none;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .home-banner h1 {
+        font-size: 55px;
+    }
+
+    .home-banner h5 {
+        font-size: 25px;
+    }
+
+    .home-banner p {
+        font-size: 20px;
+        width: 400px;
+    }
+
+    .home-banner a {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .home-banner {
+        width: 600px;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+
+    .About_us {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+    .about-image img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .aboutus-content h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .aboutus-content p {
+        font-size: 26px;
+        width: 500px;
+        line-height: 40px;
+        margin: auto;
+    }
+
+    .under-line {
+        width: 200px;
+        margin: auto;
+    }
+
+    .service-section h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .services {
+        grid-template-columns: repeat(1, 500px);
+        place-content: center;
+        gap: 20px;
+        padding: 40px;
+    }
+
+    .service-1 span {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .services img {
+        height: 450px;
+        width: 450px;
+    }
+
+    .Gallery h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .underline-3 {
+        width: 400px;
+    }
+
+    .text-know-more {
+        font-size: 35px;
+    }
+
+    .content1 h1 {
+        font-size: 15px;
+    }
+
+    .content1 h6 {
+        font-size: 10px;
+    }
+
+    .content2 h1 {
+        font-size: 15px;
+    }
+
+    .content2 h6 {
+        font-size: 10px;
+    }
+
+    .content7 h3 {
+        font-size: 15px;
+    }
+
+    .content7 p {
+        font-size: 12px;
+    }
+
+    .content8 h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .content8 p {
+        font-size: 20px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .content8 a {
+        display: none;
+    }
+
+    .content8 {
+        place-items: center;
+    }
+
+    .parallax-content {
+        width: 500px;
+    }
+
+    .parallax-content h1 {
+        font-size: 35px;
+        width: 500px;
+        text-align: center;
+    }
+
+    .parallax-content p {
+        font-size: 20px;
+        text-align: center;
+        width: 500px;
+    }
+
+    .parallax {
+        height: 50vh;
+    }
+
+    .booking-form-section {
+        padding: 35px 35px;
+        width: 450px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 250px;
+        margin: auto;
+
+    }
+
+    .header h1 {
+        font-size: 10px;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
 }
 
-#toggle-menu:checked + .hamburger + .nav-links {
-    transform: translateX(0);
-}
-
-.hamburger {
-    display: flex;
-}
-.hamburger_menu{
-    display: none;
-}
-.logo img{
-    width: 150px;
-}
-.home-banner h1 {
-    font-size: 55px;
-}
-
-.home-banner h5 {
-    font-size: 25px;
-}
-
-.home-banner p {
-    font-size: 20px;
-    width: 400px;
-}
-
-.home-banner a {
-    font-size: 20px;
-    padding: 10px;
-}
-
-.home-banner {
-    width: 600px;
-}
-
-.banner-image {
-    width: 100%;
-}
-
-.About_us {
-    grid-template-columns: repeat(1, 1fr);
-    place-items: center;
-}
-
-.about-image img {
-    width: 500px;
-    height: 500px;
-}
-
-.aboutus-content h1 {
-    font-size: 45px;
-    text-align: center;
-}
-
-.aboutus-content p {
-    font-size: 26px;
-    width: 500px;
-    line-height: 40px;
-    margin: auto;
-}
-
-.under-line {
-    width: 200px;
-    margin: auto;
-}
-
-.service-section h1 {
-    font-size: 45px;
-    text-align: center;
-}
-
-.services {
-    grid-template-columns: repeat(1, 500px);
-    place-content: center;
-    gap: 20px;
-    padding: 40px;
-}
-
-.service-1 span {
-    font-size: 40px;
-    text-align: center;
-}
-
-.services img {
-    height: 450px;
-    width: 450px;
-}
-
-.Gallery h1 {
-    font-size: 35px;
-    text-align: center;
-}
-
-.underline-3 {
-    width: 400px;
-}
-
-.text-know-more {
-    font-size: 35px;
-}
-
-.content1 h1 {
-    font-size: 15px;
-}
-
-.content1 h6 {
-    font-size: 10px;
-}
-
-.content2 h1 {
-    font-size: 15px;
-}
-
-.content2 h6 {
-    font-size: 10px;
-}
-
-.content7 h3 {
-    font-size: 15px;
-}
-
-.content7 p {
-    font-size: 12px;
-}
-
-.content8 h3 {
-    font-size: 25px;
-    text-align: center;
-}
-
-.content8 p {
-    font-size: 20px;
-    text-align: center;
-    line-height: 30px;
-}
-
-.content8 a {
-    display: none;
-}
-
-.content8 {
-    place-items: center;
-}
-
-.parallax-content {
-    width: 500px;
-}
-
-.parallax-content h1 {
-    font-size: 35px;
-    width: 500px;
-    text-align: center;
-}
-
-.parallax-content p {
-    font-size: 20px;
-    text-align: center;
-    width: 500px;
-}
-
-.parallax {
-    height: 50vh;
-}
-
-.booking-form-section {
-    padding: 35px 35px;
-    width: 450px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 250px;
-    margin: auto;
-
-}
-.header h1{
-    font-size: 10px;
-}
-
-.footer-section {
-    flex-direction: column;
-    gap: 20px;
-}
-
-}
 @media only screen and (min-width:769px) and (max-width:1200px) {
-.logo img{
-    width: 150px;
-}
-.home-banner h1 {
-    font-size: 45px;
+    .logo img {
+        width: 150px;
+    }
+
+    .home-banner h1 {
+        font-size: 45px;
+    }
+
+    .home-banner h5 {
+        font-size: 20px;
+    }
+
+    .home-banner p {
+        font-size: 15px;
+        width: 500px;
+    }
+
+    .home-banner a {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .home-banner {
+        width: 600px;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+
+    .About_us {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+
+    .about-image img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .aboutus-content h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .aboutus-content p {
+        font-size: 20px;
+        width: 500px;
+        line-height: 50px;
+        margin: auto;
+    }
+
+    .under-line {
+        width: 200px;
+        margin: auto;
+    }
+
+    .service-section h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .services {
+        grid-template-columns: repeat(1, 600px);
+        place-content: center;
+        gap: 20px;
+    }
+
+    .service-1 span {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .services img {
+        height: 550px;
+        width: 500px;
+    }
+
+    .Gallery h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .underline-3 {
+        width: 400px;
+    }
+
+    .text-know-more {
+        font-size: 40px;
+    }
+
+    .content1 h1 {
+        font-size: 20px;
+    }
+
+    .content1 h6 {
+        font-size: 12px;
+    }
+
+    .content2 h1 {
+        font-size: 20px;
+    }
+
+    .content2 h6 {
+        font-size: 11px;
+    }
+
+    .content7 h3 {
+        font-size: 23px;
+    }
+
+    .content7 p {
+        font-size: 17px;
+    }
+
+    .content8 h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .content8 p {
+        font-size: 25px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .content8 a {
+        display: none;
+    }
+
+    .content8 {
+        place-items: center;
+    }
+
+    .parallax-content {
+        width: 500px;
+    }
+
+    .parallax-content h1 {
+        font-size: 30px;
+        width: 500px;
+        text-align: center;
+    }
+
+    .parallax-content p {
+        font-size: 25px;
+        text-align: center;
+        width: 500px;
+    }
+
+    .parallax {
+        height: 90vh;
+    }
+
+    .booking-form-section {
+        padding: 35px 35px;
+        width: 600px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 300px;
+        margin: auto;
+
+    }
+
+    .header h1 {
+        font-size: 10px;
+    }
+
 }
 
-.home-banner h5 {
-    font-size: 20px;
-}
+@media only screen and (min-width:1920px) {
+    .services {
+        width: 80%;
+    }
 
-.home-banner p {
-    font-size: 15px;
-    width: 500px;
-}
+    .About_us {
+        width: 80%;
+    }
 
-.home-banner a {
-    font-size: 10px;
-    padding: 10px;
-}
+    .about-image img {
+        width: 550px;
+        height: 500px;
+    }
 
-.home-banner {
-    width: 600px;
-}
-
-.banner-image {
-    width: 100%;
-}
-
-.About_us {
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-}
-
-.about-image img {
-    width: 400px;
-    height: 400px;
-}
-
-.aboutus-content h1 {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.aboutus-content p {
-    font-size: 20px;
-    width: 500px;
-    line-height: 50px;
-    margin: auto;
-}
-
-.under-line {
-    width: 200px;
-    margin: auto;
-}
-
-.service-section h1 {
-    font-size: 45px;
-    text-align: center;
-}
-
-.services {
-    grid-template-columns: repeat(1, 600px);
-    place-content: center;
-    gap: 20px;
-}
-
-.service-1 span {
-    font-size: 30px;
-    text-align: center;
-}
-
-.services img {
-    height: 550px;
-    width: 500px;
-}
-
-.Gallery h1 {
-    font-size: 40px;
-    text-align: center;
-}
-
-.underline-3 {
-    width: 400px;
-}
-
-.text-know-more {
-    font-size: 40px;
-}
-
-.content1 h1 {
-    font-size: 20px;
-}
-
-.content1 h6 {
-    font-size: 12px;
-}
-
-.content2 h1 {
-    font-size: 20px;
-}
-
-.content2 h6 {
-    font-size: 11px;
-}
-
-.content7 h3 {
-    font-size: 23px;
-}
-
-.content7 p {
-    font-size: 17px;
-}
-
-.content8 h3 {
-    font-size: 30px;
-    text-align: center;
-}
-
-.content8 p {
-    font-size: 25px;
-    text-align: center;
-    line-height: 30px;
-}
-
-.content8 a {
-    display: none;
-}
-
-.content8 {
-    place-items: center;
-}
-
-.parallax-content {
-    width: 500px;
-}
-
-.parallax-content h1 {
-    font-size: 30px;
-    width: 500px;
-    text-align: center;
-}
-
-.parallax-content p {
-    font-size: 25px;
-    text-align: center;
-    width: 500px;
-}
-
-.parallax {
-    height: 90vh;
-}
-
-.booking-form-section {
-    padding: 35px 35px;
-    width: 600px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 300px;
-    margin: auto;
-
-}
-.header h1{
-    font-size: 10px;
-}
-
+    .service-1 img {
+        width: 350px;
+        height: 500px;
+    }
 }
